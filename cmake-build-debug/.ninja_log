@@ -1,13 +1,3 @@
 # ninja log v6
-5	549	7488878984552105	CMakeFiles/introCplusplus.dir/main.cpp.obj	6fe1dc10106bf839
-551	667	7488878990005515	introCplusplus.exe	f35098b01b1ccf2
-10	633	7488882819826027	CMakeFiles/introCplusplus.dir/main.cpp.obj	6fe1dc10106bf839
-634	762	7488882826067908	introCplusplus.exe	f35098b01b1ccf2
-9	444	7488883757959126	CMakeFiles/introCplusplus.dir/main.cpp.obj	6fe1dc10106bf839
-445	545	7488883762311679	introCplusplus.exe	f35098b01b1ccf2
-8	422	7488885042119747	CMakeFiles/introCplusplus.dir/main.cpp.obj	6fe1dc10106bf839
-423	520	7488885046269144	introCplusplus.exe	f35098b01b1ccf2
-8	444	7488887674558188	CMakeFiles/introCplusplus.dir/main.cpp.obj	6fe1dc10106bf839
-446	540	7488887678937622	introCplusplus.exe	f35098b01b1ccf2
 12	444	7488893346769087	CMakeFiles/introCplusplus.dir/main.cpp.obj	6fe1dc10106bf839
 445	549	7488893351098254	introCplusplus.exe	f35098b01b1ccf2

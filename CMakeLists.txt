@@ -3,4 +3,6 @@ project(introCplusplus)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(introCplusplus main.cpp)
+add_executable(introCplusplus main.cpp
+        runtime.cpp
+)
