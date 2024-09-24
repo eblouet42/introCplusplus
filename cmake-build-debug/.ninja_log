@@ -1,3 +1,6 @@
 # ninja log v6
-12	444	7488893346769087	CMakeFiles/introCplusplus.dir/main.cpp.obj	6fe1dc10106bf839
+2	588	7488907704433889	CMakeFiles/introCplusplus.dir/main.cpp.obj	6fe1dc10106bf839
 445	549	7488893351098254	introCplusplus.exe	f35098b01b1ccf2
+8	1448	7488907704493873	CMakeFiles/introCplusplus.dir/runtime.cpp.obj	2a9a9018b03b809b
+6	1215	7488910195343058	CMakeFiles/measure_runtime.dir/runtime.cpp.obj	19a769a49fae1eb7
+1215	1309	7488910207435725	measure_runtime.exe	91b05991f5c5515f

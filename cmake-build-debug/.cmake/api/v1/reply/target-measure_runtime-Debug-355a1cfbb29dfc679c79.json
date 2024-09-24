@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "introCplusplus.exe"
+			"path" : "measure_runtime.exe"
 		},
 		{
-			"path" : "introCplusplus.pdb"
+			"path" : "measure_runtime.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -52,12 +52,11 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
-	"id" : "introCplusplus::@6890427a1f51a3e7e1df",
+	"id" : "measure_runtime::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -77,8 +76,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "introCplusplus",
-	"nameOnDisk" : "introCplusplus.exe",
+	"name" : "measure_runtime",
+	"nameOnDisk" : "measure_runtime.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -90,19 +89,12 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
 	"sources" : 
 	[
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
-			"sourceGroupIndex" : 0
-		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,

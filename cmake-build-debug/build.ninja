@@ -55,12 +55,6 @@ build CMakeFiles/introCplusplus.dir/main.cpp.obj: CXX_COMPILER__introCplusplus_u
   OBJECT_DIR = CMakeFiles\introCplusplus.dir
   OBJECT_FILE_DIR = CMakeFiles\introCplusplus.dir
 
-build CMakeFiles/introCplusplus.dir/runtime.cpp.obj: CXX_COMPILER__introCplusplus_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/runtime.cpp || cmake_object_order_depends_target_introCplusplus
-  DEP_FILE = CMakeFiles\introCplusplus.dir\runtime.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\introCplusplus.dir
-  OBJECT_FILE_DIR = CMakeFiles\introCplusplus.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target introCplusplus
@@ -69,7 +63,7 @@ build CMakeFiles/introCplusplus.dir/runtime.cpp.obj: CXX_COMPILER__introCplusplu
 #############################################
 # Link the executable introCplusplus.exe
 
-build introCplusplus.exe: CXX_EXECUTABLE_LINKER__introCplusplus_Debug CMakeFiles/introCplusplus.dir/main.cpp.obj CMakeFiles/introCplusplus.dir/runtime.cpp.obj
+build introCplusplus.exe: CXX_EXECUTABLE_LINKER__introCplusplus_Debug CMakeFiles/introCplusplus.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\introCplusplus.dir
@@ -78,6 +72,39 @@ build introCplusplus.exe: CXX_EXECUTABLE_LINKER__introCplusplus_Debug CMakeFiles
   TARGET_FILE = introCplusplus.exe
   TARGET_IMPLIB = libintroCplusplus.dll.a
   TARGET_PDB = introCplusplus.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target measure_runtime
+
+
+#############################################
+# Order-only phony target for measure_runtime
+
+build cmake_object_order_depends_target_measure_runtime: phony || .
+
+build CMakeFiles/measure_runtime.dir/runtime.cpp.obj: CXX_COMPILER__measure_runtime_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/runtime.cpp || cmake_object_order_depends_target_measure_runtime
+  DEP_FILE = CMakeFiles\measure_runtime.dir\runtime.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\measure_runtime.dir
+  OBJECT_FILE_DIR = CMakeFiles\measure_runtime.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target measure_runtime
+
+
+#############################################
+# Link the executable measure_runtime.exe
+
+build measure_runtime.exe: CXX_EXECUTABLE_LINKER__measure_runtime_Debug CMakeFiles/measure_runtime.dir/runtime.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\measure_runtime.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = measure_runtime.exe
+  TARGET_IMPLIB = libmeasure_runtime.dll.a
+  TARGET_PDB = measure_runtime.exe.dbg
 
 
 #############################################
@@ -107,6 +134,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build introCplusplus: phony introCplusplus.exe
 
+build measure_runtime: phony measure_runtime.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -115,7 +144,7 @@ build introCplusplus: phony introCplusplus.exe
 #############################################
 # Folder: C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug
 
-build all: phony introCplusplus.exe
+build all: phony introCplusplus.exe measure_runtime.exe
 
 # =============================================================================
 # Built-in targets
