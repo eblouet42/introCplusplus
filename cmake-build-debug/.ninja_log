@@ -1,13 +1,16 @@
 # ninja log v6
-5	549	7488878984552105	CMakeFiles/introCplusplus.dir/main.cpp.obj	6fe1dc10106bf839
-551	667	7488878990005515	introCplusplus.exe	f35098b01b1ccf2
-10	633	7488882819826027	CMakeFiles/introCplusplus.dir/main.cpp.obj	6fe1dc10106bf839
-634	762	7488882826067908	introCplusplus.exe	f35098b01b1ccf2
-9	444	7488883757959126	CMakeFiles/introCplusplus.dir/main.cpp.obj	6fe1dc10106bf839
-445	545	7488883762311679	introCplusplus.exe	f35098b01b1ccf2
-8	422	7488885042119747	CMakeFiles/introCplusplus.dir/main.cpp.obj	6fe1dc10106bf839
-423	520	7488885046269144	introCplusplus.exe	f35098b01b1ccf2
-8	444	7488887674558188	CMakeFiles/introCplusplus.dir/main.cpp.obj	6fe1dc10106bf839
-446	540	7488887678937622	introCplusplus.exe	f35098b01b1ccf2
-12	444	7488893346769087	CMakeFiles/introCplusplus.dir/main.cpp.obj	6fe1dc10106bf839
+2	588	7488907704433889	CMakeFiles/introCplusplus.dir/main.cpp.obj	6fe1dc10106bf839
 445	549	7488893351098254	introCplusplus.exe	f35098b01b1ccf2
+8	1448	7488907704493873	CMakeFiles/introCplusplus.dir/runtime.cpp.obj	2a9a9018b03b809b
+6	1215	7488910195343058	CMakeFiles/measure_runtime.dir/runtime.cpp.obj	19a769a49fae1eb7
+1215	1309	7488910207435725	measure_runtime.exe	91b05991f5c5515f
+6	789	7488916917546535	CMakeFiles/introCplusplus.dir/main.cpp.obj	6fe1dc10106bf839
+789	1004	7488916925367601	introCplusplus.exe	f35098b01b1ccf2
+3	1762	7488917122173119	CMakeFiles/measure_runtime.dir/runtime.cpp.obj	19a769a49fae1eb7
+1762	1894	7488917139775496	measure_runtime.exe	91b05991f5c5515f
+6	1331	7488918379656655	CMakeFiles/measure_runtime.dir/runtime.cpp.obj	19a769a49fae1eb7
+1331	1446	7488918392895118	measure_runtime.exe	91b05991f5c5515f
+21	1857	7488920734152834	CMakeFiles/measure_runtime.dir/runtime.cpp.obj	19a769a49fae1eb7
+1857	1991	7488920752520256	measure_runtime.exe	91b05991f5c5515f
+11	2813	7488920984606019	CMakeFiles/measure_runtime.dir/runtime.cpp.obj	19a769a49fae1eb7
+2813	3366	7488921012632288	measure_runtime.exe	91b05991f5c5515f
