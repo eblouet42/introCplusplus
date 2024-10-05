@@ -9,7 +9,7 @@ int mylen(char s[]) {
 
 int compare(char s[], char t[]) {
     int len = mylen(t);
-    for (int i = 0; i < len; i++) {
+    for (int i = 0; i <= len; i++) {
         if (s[i] < t[i]) {
             return -1;
         } if (s[i] > t[i]) {
@@ -36,5 +36,6 @@ int main() {
     std::cout << compare("Mathis", "hugo")  << std::endl;
     std::cout << compare("Hello World!", "Hello World!") << std::endl;
     std::cout << compare(" ", "") << std::endl;
+    std::cout << compare("rizz", "rizzler") << std::endl;
     return 0;
 }
