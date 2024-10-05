@@ -28,16 +28,14 @@ bool palyndrome(char s[]){
     return true;
 }
 
-void /* char* */ reverse(char s[]) {
-    std::cout << "euh" << std::endl;
+void inverse(char* s){
     int n = mylen(s);
-    char reverse[n+1];
-    reverse[n] = '\0';
-    for (int i = 0; i < n; i++) {
-        reverse[i] = s[n - i - 1];
+    char temp;
+    for (int i = 0; i < n / 2; i++){
+        temp=s[i];
+        s[i]=s[n-i-1];
+        s[n-i-1]=temp;
     }
-    printf("%s\n", reverse);
-    //return reverse;
 }
 
 int main() {
@@ -52,7 +50,9 @@ int main() {
     std::cout << compare("Rizz", "Rizz") << std::endl;
     std::cout << palyndrome("ABBA") << std::endl;
     std::cout << palyndrome("ACAB") << std::endl;
-    /*std::cout <<*/ reverse("123456789") /*<< std::endl;*/;
-    std::cout << "heheheha" << std::endl;
+    char nombre[]="123456789";
+    std::cout << "avant inversion: "<<nombre << std::endl;
+    inverse(nombre);
+    std::cout << "apres inversion: "<<nombre << std::endl;
     return 0;
 }
