@@ -16,7 +16,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -32,12 +33,20 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "computation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-computation-Debug-ff9f3d2af0f22aa9ee7a.json",
+					"name" : "computation",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 0,
 					"id" : "introCplusplus::@6890427a1f51a3e7e1df",

@@ -106,6 +106,39 @@ build measure_runtime.exe: CXX_EXECUTABLE_LINKER__measure_runtime_Debug CMakeFil
   TARGET_IMPLIB = libmeasure_runtime.dll.a
   TARGET_PDB = measure_runtime.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target computation
+
+
+#############################################
+# Order-only phony target for computation
+
+build cmake_object_order_depends_target_computation: phony || .
+
+build CMakeFiles/computation.dir/Computation.cpp.obj: CXX_COMPILER__computation_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/Computation.cpp || cmake_object_order_depends_target_computation
+  DEP_FILE = CMakeFiles\computation.dir\Computation.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\computation.dir
+  OBJECT_FILE_DIR = CMakeFiles\computation.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target computation
+
+
+#############################################
+# Link the executable computation.exe
+
+build computation.exe: CXX_EXECUTABLE_LINKER__computation_Debug CMakeFiles/computation.dir/Computation.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\computation.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = computation.exe
+  TARGET_IMPLIB = libcomputation.dll.a
+  TARGET_PDB = computation.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -132,6 +165,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build computation: phony computation.exe
+
 build introCplusplus: phony introCplusplus.exe
 
 build measure_runtime: phony measure_runtime.exe
@@ -144,7 +179,7 @@ build measure_runtime: phony measure_runtime.exe
 #############################################
 # Folder: C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug
 
-build all: phony introCplusplus.exe measure_runtime.exe
+build all: phony introCplusplus.exe measure_runtime.exe computation.exe
 
 # =============================================================================
 # Built-in targets
