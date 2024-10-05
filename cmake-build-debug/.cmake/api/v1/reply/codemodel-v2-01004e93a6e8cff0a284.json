@@ -18,7 +18,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -36,7 +37,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -68,6 +70,13 @@
 					"id" : "string::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-string-Debug-befcf22ac0d84b7a4cb4.json",
 					"name" : "string",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vec3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vec3-Debug-6482e8a1c88b8cf11efc.json",
+					"name" : "vec3",
 					"projectIndex" : 0
 				}
 			]
