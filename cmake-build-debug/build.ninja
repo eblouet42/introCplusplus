@@ -172,6 +172,39 @@ build string.exe: CXX_EXECUTABLE_LINKER__string_Debug CMakeFiles/string.dir/cstr
   TARGET_IMPLIB = libstring.dll.a
   TARGET_PDB = string.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target vec3
+
+
+#############################################
+# Order-only phony target for vec3
+
+build cmake_object_order_depends_target_vec3: phony || .
+
+build CMakeFiles/vec3.dir/RayTracing/vec3.cpp.obj: CXX_COMPILER__vec3_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/RayTracing/vec3.cpp || cmake_object_order_depends_target_vec3
+  DEP_FILE = CMakeFiles\vec3.dir\RayTracing\vec3.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\vec3.dir
+  OBJECT_FILE_DIR = CMakeFiles\vec3.dir\RayTracing
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target vec3
+
+
+#############################################
+# Link the executable vec3.exe
+
+build vec3.exe: CXX_EXECUTABLE_LINKER__vec3_Debug CMakeFiles/vec3.dir/RayTracing/vec3.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\vec3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = vec3.exe
+  TARGET_IMPLIB = libvec3.dll.a
+  TARGET_PDB = vec3.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -206,6 +239,8 @@ build measure_runtime: phony measure_runtime.exe
 
 build string: phony string.exe
 
+build vec3: phony vec3.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -214,7 +249,7 @@ build string: phony string.exe
 #############################################
 # Folder: C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug
 
-build all: phony introCplusplus.exe measure_runtime.exe computation.exe string.exe
+build all: phony introCplusplus.exe measure_runtime.exe computation.exe string.exe vec3.exe
 
 # =============================================================================
 # Built-in targets
