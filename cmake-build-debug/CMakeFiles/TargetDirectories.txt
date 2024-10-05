@@ -3,5 +3,6 @@ C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/measure
 C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/computation.dir
 C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/string.dir
 C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/vec3.dir
+C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/image.dir
 C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/rebuild_cache.dir

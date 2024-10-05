@@ -1,6 +1,7 @@
 #include <cmath>
 #include <ostream>
 #include <iostream>
+
 struct vec3{float coord[3];};
 
 float dot(vec3 a, vec3 b){
@@ -48,8 +49,6 @@ inline std::ostream& operator<<(std::ostream& out, const vec3& v) {
   return out;
 }
 
-
-
 int main() {
   vec3 v1 = {1,2,3};
   vec3 v2 = {4,5,6};
@@ -59,4 +58,3 @@ int main() {
   std::cout<<"uwu"<<std::endl;
   std::cout<<"||v2||^2 = "<<squaredLength(v2)<<std::endl;
 }
-

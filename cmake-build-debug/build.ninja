@@ -205,6 +205,39 @@ build vec3.exe: CXX_EXECUTABLE_LINKER__vec3_Debug CMakeFiles/vec3.dir/RayTracing
   TARGET_IMPLIB = libvec3.dll.a
   TARGET_PDB = vec3.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target image
+
+
+#############################################
+# Order-only phony target for image
+
+build cmake_object_order_depends_target_image: phony || .
+
+build CMakeFiles/image.dir/RayTracing/image.cpp.obj: CXX_COMPILER__image_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/RayTracing/image.cpp || cmake_object_order_depends_target_image
+  DEP_FILE = CMakeFiles\image.dir\RayTracing\image.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\image.dir
+  OBJECT_FILE_DIR = CMakeFiles\image.dir\RayTracing
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target image
+
+
+#############################################
+# Link the executable image.exe
+
+build image.exe: CXX_EXECUTABLE_LINKER__image_Debug CMakeFiles/image.dir/RayTracing/image.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\image.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = image.exe
+  TARGET_IMPLIB = libimage.dll.a
+  TARGET_PDB = image.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -233,6 +266,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build computation: phony computation.exe
 
+build image: phony image.exe
+
 build introCplusplus: phony introCplusplus.exe
 
 build measure_runtime: phony measure_runtime.exe
@@ -249,7 +284,7 @@ build vec3: phony vec3.exe
 #############################################
 # Folder: C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug
 
-build all: phony introCplusplus.exe measure_runtime.exe computation.exe string.exe vec3.exe
+build all: phony introCplusplus.exe measure_runtime.exe computation.exe string.exe vec3.exe image.exe
 
 # =============================================================================
 # Built-in targets
