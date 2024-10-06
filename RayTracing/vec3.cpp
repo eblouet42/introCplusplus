@@ -25,24 +25,28 @@ inline vec3 operator+(const vec3& v0, const vec3& v1) {
   result.coord[0] = v0.coord[0] + v1.coord[0];
   result.coord[1] = v0.coord[1] + v1.coord[1];
   result.coord[2] = v0.coord[2] + v1.coord[2];
+  return result;
 }
 inline vec3 operator-(const vec3& v0, const vec3& v1) {
   vec3 result;
   result.coord[0] = v0.coord[0] - v1.coord[0];
   result.coord[1] = v0.coord[1] - v1.coord[1];
   result.coord[2] = v0.coord[2] - v1.coord[2];
+  return result;
 }
 inline vec3 operator*(float scalar, const vec3& v) {
   vec3 result;
   result.coord[0] = scalar * v.coord[0];
   result.coord[1] = scalar * v.coord[1];
   result.coord[2] = scalar * v.coord[2];
+  return result;
 }
 inline vec3 operator*(const vec3& v,float scalar) {
   vec3 result;
   result.coord[0] = scalar * v.coord[0];
   result.coord[1] = scalar * v.coord[1];
   result.coord[2] = scalar * v.coord[2];
+  return result;
 }
 inline std::ostream& operator<<(std::ostream& out, const vec3& v) {
   out << "{ " << v.coord[0]<< " , " << v.coord[1]<< " , " << v.coord[2]<< " }";
@@ -56,7 +60,10 @@ inline std::ostream& operator<<(std::ostream& out, const vec3& v) {
   std::cout<<"v1.v2 = "<<dot(v1,v2)<<std::endl;
   std::cout<<"v1^v2 = "<<cross(v1,v2)<<std::endl;
   std::cout<<"||v1|| = "<<length(v1)<<std::endl;
-  std::cout<<"uwu"<<std::endl;
   std::cout<<"||v2||^2 = "<<squaredLength(v2)<<std::endl;
+  std::cout<<"v1+v2 = "<<v1+v2<<std::endl;
+  std::cout<<"v2-v1 = "<<v2-v1<<std::endl;
+  std::cout<<"2*v1 = "<<2*v1<<std::endl;
+  std::cout<<"v2*2 = "<<v2*2<<std::endl;
 }
 */
