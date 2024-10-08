@@ -67,3 +67,66 @@ inline std::ostream& operator<<(std::ostream& out, const vec3& v) {
   std::cout<<"v2*2 = "<<v2*2<<std::endl;
 }
 */
+
+
+/*for (float y = 0; y < image.height; ++y) {
+  for (float x = 0; x < image.width; ++x) {
+    Color pixel = {0,x/image.width,0};
+    image(x,y) = pixel;
+  }
+}
+createImage(image,"degradeVertHorizontal.ppm");
+for (float y = 0; y < image.height; ++y) {
+  for (float x = 0; x < image.width; ++x) {
+    Color pixel = {0,0,x/image.width};
+    image(x,y) = pixel;
+  }
+}
+createImage(image,"degradeBleuHorizontal.ppm");
+for (float y = 0; y < image.height; ++y) {
+  for (float x = 0; x < image.width; ++x) {
+    Color pixel = {y/image.height,0,0};
+    image(x,y) = pixel;
+  }
+}
+createImage(image,"degradeRougeVertical.ppm");
+for (float y = 0; y < image.height; ++y) {
+  for (float x = 0; x < image.width; ++x) {
+    Color pixel = {0,(x*y)/(image.width*image.height),(x*y)/(image.width*image.height)};
+    image(x,y) = pixel;
+  }
+}
+createImage(image,"degradeCyanDiagonal.ppm");
+for (float y = 0; y < image.height; ++y) {
+  for (float x = 0; x < image.width; ++x) {
+    Color pixel = {1-(x+y)/(image.width+image.height),0,(x+y)/(image.width+image.height)};
+    image(x,y) = pixel;
+  }
+}
+createImage(image,"rougeBleu.ppm");
+for (float y = 0; y < image.height; ++y) {
+  for (float x = 0; x < image.width; ++x) {
+    Color pixel;
+    if (y/image.height*3<1) {
+      pixel = {0,0,0};
+    } else if (y/image.height*3<2) {
+      pixel = {1,1,1};
+    } else {
+      pixel = {0,0.5,0};
+    }
+    if (x<image.height/2) {
+      if (y<image.height/2) {
+        if (x<y) {
+          pixel = {0.85,0,0};
+        }
+      }
+      else {
+        if (x<(image.height-y)) {
+          pixel = {0.85,0,0};
+        }
+      }
+    }
+    image(x,y) = pixel;
+  }
+}
+createImage(image,"islamoGauchiste.ppm");*/
