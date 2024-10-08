@@ -50,7 +50,7 @@ void rayTracingOneSphere(Image& image, const Sphere& sphere) {
   vec3 desuns={1,1,1};
   for (int y = 0; y < image.height; ++y) {
     for (int x = 0; x < image.width; ++x) {
-      Ray ray={{2.0f*x/image.width-1.0f,2.0f*y/image.height-1.0f,0},{0,0,-1.0f}};
+      Ray ray={{2.0f*x/image.width-1.0f,2.0f*y/image.height-1.0f,0},{0,0,1.0f}};
       float t=intersect(ray,sphere);
       if (t>=0){
         vec3 hit_point = ray.origin+t*ray.direction;
@@ -68,10 +68,73 @@ void rayTracingOneSphere(Image& image, const Sphere& sphere) {
 
 
 
-
 int main(){
   Image image;
-  Sphere sphere={{0,0,20},0.8f};
+
+  /*
+
+  for (float y = 0; y < image.height; ++y) {
+    for (float x = 0; x < image.width; ++x) {
+      Color pixel = {0,x/image.width,0};
+      image(x,y) = pixel;
+    }
+  }
+  createImage(image,"degradeVertHorizontal.ppm");
+  for (float y = 0; y < image.height; ++y) {
+    for (float x = 0; x < image.width; ++x) {
+      Color pixel = {0,0,x/image.width};
+      image(x,y) = pixel;
+    }
+  }
+  createImage(image,"degradeBleuHorizontal.ppm");
+  for (float y = 0; y < image.height; ++y) {
+    for (float x = 0; x < image.width; ++x) {
+      Color pixel = {y/image.height,0,0};
+      image(x,y) = pixel;
+    }
+  }
+  createImage(image,"degradeRougeVertical.ppm");
+  for (float y = 0; y < image.height; ++y) {
+    for (float x = 0; x < image.width; ++x) {
+      Color pixel = {0,(x*y)/(image.width*image.height),(x*y)/(image.width*image.height)};
+      image(x,y) = pixel;
+    }
+  }
+  createImage(image,"degradeCyanDiagonal.ppm");
+  for (float y = 0; y < image.height; ++y) {
+    for (float x = 0; x < image.width; ++x) {
+      Color pixel = {1-(x+y)/(image.width+image.height),0,(x+y)/(image.width+image.height)};
+      image(x,y) = pixel;
+    }
+  }
+  createImage(image,"rougeBleu.ppm");
+  for (float y = 0; y < image.height; ++y) {
+    for (float x = 0; x < image.width; ++x) {
+      Color pixel;
+      if (y/image.height*3<1) {
+        pixel = {0,0,0};
+      } else if (y/image.height*3<2) {
+        pixel = {1,1,1};
+      } else {
+        pixel = {0,0.5,0};
+      }
+      if (x<image.height/2) {
+        if (y<image.height/2) {
+          if (x<y) {
+            pixel = {0.85,0,0};
+          }
+        }
+        else {
+          if (x<(image.height-y)) {
+            pixel = {0.85,0,0};
+          }
+        }
+      }
+      image(x,y) = pixel;
+    }
+  }
+  createImage(image,"islamoGauchiste.ppm");*/
+  Sphere sphere={{0,0,-20},0.8f};
   rayTracingOneSphere(image,sphere);
   createImage(image,"testsphere.ppm");
   return 666;
