@@ -21,7 +21,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				}
 			],
@@ -42,7 +43,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				}
 			],
@@ -53,6 +55,13 @@
 					"id" : "computation::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-computation-Debug-2455f9c3a9fd301d3189.json",
 					"name" : "computation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dic-Debug-6a51b73cf9c74ac17cdf.json",
+					"name" : "dic",
 					"projectIndex" : 0
 				},
 				{

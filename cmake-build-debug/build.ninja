@@ -271,6 +271,39 @@ build echo.exe: CXX_EXECUTABLE_LINKER__echo_Debug CMakeFiles/echo.dir/echo.cpp.o
   TARGET_IMPLIB = libecho.dll.a
   TARGET_PDB = echo.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target dic
+
+
+#############################################
+# Order-only phony target for dic
+
+build cmake_object_order_depends_target_dic: phony || .
+
+build CMakeFiles/dic.dir/dichotomy.cpp.obj: CXX_COMPILER__dic_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/dichotomy.cpp || cmake_object_order_depends_target_dic
+  DEP_FILE = CMakeFiles\dic.dir\dichotomy.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\dic.dir
+  OBJECT_FILE_DIR = CMakeFiles\dic.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target dic
+
+
+#############################################
+# Link the executable dic.exe
+
+build dic.exe: CXX_EXECUTABLE_LINKER__dic_Debug CMakeFiles/dic.dir/dichotomy.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\dic.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = dic.exe
+  TARGET_IMPLIB = libdic.dll.a
+  TARGET_PDB = dic.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -299,6 +332,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build computation: phony computation.exe
 
+build dic: phony dic.exe
+
 build echo: phony echo.exe
 
 build image: phony image.exe
@@ -319,7 +354,7 @@ build vec3: phony vec3.exe
 #############################################
 # Folder: C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug
 
-build all: phony introCplusplus.exe measure_runtime.exe computation.exe string.exe vec3.exe image.exe echo.exe
+build all: phony introCplusplus.exe measure_runtime.exe computation.exe string.exe vec3.exe image.exe echo.exe dic.exe
 
 # =============================================================================
 # Built-in targets
