@@ -51,7 +51,7 @@ const char* concatenate(char* s1, char* s2) {
     temp[len1+len2] = '\0';
     return temp;
 }
-
+/*
 int main() {
     char* s = "Hello World!";
     std::cout << mylen(s) << std::endl;
@@ -73,4 +73,4 @@ int main() {
     inverse(amogus);
     std::cout<<concatenate("ohio", amogus)<<std::endl;
     return 0;
-}
+}*/

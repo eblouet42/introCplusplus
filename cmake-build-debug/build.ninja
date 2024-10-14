@@ -238,6 +238,39 @@ build image.exe: CXX_EXECUTABLE_LINKER__image_Debug CMakeFiles/image.dir/RayTrac
   TARGET_IMPLIB = libimage.dll.a
   TARGET_PDB = image.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target echo
+
+
+#############################################
+# Order-only phony target for echo
+
+build cmake_object_order_depends_target_echo: phony || .
+
+build CMakeFiles/echo.dir/echo.cpp.obj: CXX_COMPILER__echo_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/echo.cpp || cmake_object_order_depends_target_echo
+  DEP_FILE = CMakeFiles\echo.dir\echo.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\echo.dir
+  OBJECT_FILE_DIR = CMakeFiles\echo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target echo
+
+
+#############################################
+# Link the executable echo.exe
+
+build echo.exe: CXX_EXECUTABLE_LINKER__echo_Debug CMakeFiles/echo.dir/echo.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\echo.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = echo.exe
+  TARGET_IMPLIB = libecho.dll.a
+  TARGET_PDB = echo.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -266,6 +299,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build computation: phony computation.exe
 
+build echo: phony echo.exe
+
 build image: phony image.exe
 
 build introCplusplus: phony introCplusplus.exe
@@ -284,7 +319,7 @@ build vec3: phony vec3.exe
 #############################################
 # Folder: C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug
 
-build all: phony introCplusplus.exe measure_runtime.exe computation.exe string.exe vec3.exe image.exe
+build all: phony introCplusplus.exe measure_runtime.exe computation.exe string.exe vec3.exe image.exe echo.exe
 
 # =============================================================================
 # Built-in targets
