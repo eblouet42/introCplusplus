@@ -3,10 +3,13 @@ project(introCplusplus)
 
 set(CMAKE_CXX_STANDARD 23)
 
-
 add_executable(introCplusplus main.cpp)
 add_executable(measure_runtime runtime.cpp)
 add_executable(computation Computation.cpp)
 add_executable(string cstring.cpp)
 add_executable(vec3 RayTracing/vec3.cpp)
 add_executable(image RayTracing/image.cpp)
+add_executable(echo echo.cpp)
+add_executable(dic dichotomy.cpp)
+add_executable(link linkedList.cpp)
+add_executable(test testpointers.cpp)

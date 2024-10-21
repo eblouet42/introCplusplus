@@ -238,6 +238,138 @@ build image.exe: CXX_EXECUTABLE_LINKER__image_Debug CMakeFiles/image.dir/RayTrac
   TARGET_IMPLIB = libimage.dll.a
   TARGET_PDB = image.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target echo
+
+
+#############################################
+# Order-only phony target for echo
+
+build cmake_object_order_depends_target_echo: phony || .
+
+build CMakeFiles/echo.dir/echo.cpp.obj: CXX_COMPILER__echo_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/echo.cpp || cmake_object_order_depends_target_echo
+  DEP_FILE = CMakeFiles\echo.dir\echo.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\echo.dir
+  OBJECT_FILE_DIR = CMakeFiles\echo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target echo
+
+
+#############################################
+# Link the executable echo.exe
+
+build echo.exe: CXX_EXECUTABLE_LINKER__echo_Debug CMakeFiles/echo.dir/echo.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\echo.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = echo.exe
+  TARGET_IMPLIB = libecho.dll.a
+  TARGET_PDB = echo.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target dic
+
+
+#############################################
+# Order-only phony target for dic
+
+build cmake_object_order_depends_target_dic: phony || .
+
+build CMakeFiles/dic.dir/dichotomy.cpp.obj: CXX_COMPILER__dic_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/dichotomy.cpp || cmake_object_order_depends_target_dic
+  DEP_FILE = CMakeFiles\dic.dir\dichotomy.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\dic.dir
+  OBJECT_FILE_DIR = CMakeFiles\dic.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target dic
+
+
+#############################################
+# Link the executable dic.exe
+
+build dic.exe: CXX_EXECUTABLE_LINKER__dic_Debug CMakeFiles/dic.dir/dichotomy.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\dic.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = dic.exe
+  TARGET_IMPLIB = libdic.dll.a
+  TARGET_PDB = dic.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target link
+
+
+#############################################
+# Order-only phony target for link
+
+build cmake_object_order_depends_target_link: phony || .
+
+build CMakeFiles/link.dir/linkedList.cpp.obj: CXX_COMPILER__link_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/linkedList.cpp || cmake_object_order_depends_target_link
+  DEP_FILE = CMakeFiles\link.dir\linkedList.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\link.dir
+  OBJECT_FILE_DIR = CMakeFiles\link.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target link
+
+
+#############################################
+# Link the executable link.exe
+
+build link.exe: CXX_EXECUTABLE_LINKER__link_Debug CMakeFiles/link.dir/linkedList.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\link.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = link.exe
+  TARGET_IMPLIB = liblink.dll.a
+  TARGET_PDB = link.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test
+
+
+#############################################
+# Order-only phony target for test
+
+build cmake_object_order_depends_target_test: phony || .
+
+build CMakeFiles/test.dir/testpointers.cpp.obj: CXX_COMPILER__test_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/testpointers.cpp || cmake_object_order_depends_target_test
+  DEP_FILE = CMakeFiles\test.dir\testpointers.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\test.dir
+  OBJECT_FILE_DIR = CMakeFiles\test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test
+
+
+#############################################
+# Link the executable test.exe
+
+build test.exe: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/testpointers.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test.exe
+  TARGET_IMPLIB = libtest.dll.a
+  TARGET_PDB = test.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -266,13 +398,21 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build computation: phony computation.exe
 
+build dic: phony dic.exe
+
+build echo: phony echo.exe
+
 build image: phony image.exe
 
 build introCplusplus: phony introCplusplus.exe
 
+build link: phony link.exe
+
 build measure_runtime: phony measure_runtime.exe
 
 build string: phony string.exe
+
+build test: phony test.exe
 
 build vec3: phony vec3.exe
 
@@ -284,7 +424,7 @@ build vec3: phony vec3.exe
 #############################################
 # Folder: C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug
 
-build all: phony introCplusplus.exe measure_runtime.exe computation.exe string.exe vec3.exe image.exe
+build all: phony introCplusplus.exe measure_runtime.exe computation.exe string.exe vec3.exe image.exe echo.exe dic.exe link.exe test.exe
 
 # =============================================================================
 # Built-in targets

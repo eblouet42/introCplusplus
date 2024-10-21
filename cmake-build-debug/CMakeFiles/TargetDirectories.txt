@@ -4,5 +4,9 @@ C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/computa
 C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/string.dir
 C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/vec3.dir
 C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/image.dir
+C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/echo.dir
+C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/dic.dir
+C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/link.dir
+C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/test.dir
 C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
