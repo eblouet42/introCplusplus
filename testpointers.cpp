@@ -1,0 +1,59 @@
+#include "testpointers.h"
+#include <stdio.h>
+
+int main() {
+  int a=5;
+  int b=6;
+  printf("sizeof(a)=%d\n", sizeof(a));
+  int* p = &a;
+  printf("sizeof(p)=%d\n", sizeof(p));
+  printf("a=%d\n", a);
+  printf("*p=%d\n", *p);
+  printf("p=%p\n", p);
+  *p=7;
+  printf("a=%d\n", a);
+  printf("*p=%d\n", *p);
+  p=&b;
+  printf("*p=%d\n", *p);
+  b=10;
+  printf("*p=%d\n", *p);
+  *p=8;
+  printf("b=%d\n", b);
+  printf("sizeof(p)=%d\n", sizeof(p));
+  printf("sizeof(*p)=%d\n", sizeof(*p));
+  int** pp = &p;
+  printf("pp=%p\n", pp);
+  printf("sizeof(pp)=%d\n", sizeof(pp));
+  printf("*pp=%p\n", *pp);
+  **pp= 0;
+  printf("b=%d\n", b);
+  printf("sizeof(*p)=%d\n", sizeof(*p));
+  printf("p=%p\n", p);
+  printf("*p=%p\n", *p);
+  *pp=&a;
+  printf("p=%p\n", p);
+  printf("*p=%p\n", *p);
+  printf("**pp=%p\n", **pp);
+  **pp=*p+1;
+  int tab[]={0,1,2,3,4,5,6,7,8,9};
+  printf("sizeof(tab)=%d\n", sizeof(tab));
+  printf("tab[0]=%d\n", tab[0]);
+  printf("tab[1]=%d\n", tab[1]);
+  int* tabp = &tab[0];
+  int* uwu = &tab[4];
+  *uwu=*uwu+1;
+  printf("*tabp=%p\n", *tabp);
+  printf("tabp=%p\n", tabp);
+  printf("uwu=%p\n", uwu);
+  printf("tab[4]=%d\n", tab[4]);
+  int x=1;
+  int* y=&x;
+  x=2;
+  printf("y=%d\n", *y);
+  printf("x=%d\n", x);
+  int& z=x;
+  printf("z=%d\n", z);
+  printf("sizeof(z)=%d\n", sizeof(z));
+  const int z2=1;
+  printf("z2=%d\n", z2);
+}

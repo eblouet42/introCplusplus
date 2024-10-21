@@ -1,18 +1,28 @@
 
-struct intpair{
-    int a=0, b=0;};
+#include <bits/ios_base.h>
+#include <bits/ranges_base.h>
 
-struct dicoindex {
+struct intpair{
+    int a;
+    int b;
+    auto operator<=>(const intpair &p) const=default;
+};
+
+struct dichoindex {
+    intpair* begin;
+    intpair* end;
     };
 
-int dichotomy(searchdic dic) {
-    bool fini=false;
-    while (!fini) {
-        if (dic.tablo.a==dic.tablo.b) {
-            fini=true;
-            if
-        }
-            for (int i=a)
-    }
+intpair* dichotomy(dichoindex range, intpair element) {
+    intpair* middle=range.begin+(range.end-range.begin)/2;
+    if ( *middle==element){return middle;}
+    if (range.end==range.begin){return nullptr;}
+    dichoindex new_range;
+    if (*middle>element) {
+        new_range={range.begin,middle};
+    } else{ new_range={middle+1,range.end};
+    }return dichotomy(new_range,element);
+}
 
+int main{
 }
