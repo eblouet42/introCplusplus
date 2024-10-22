@@ -370,6 +370,39 @@ build test.exe: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/testpointe
   TARGET_IMPLIB = libtest.dll.a
   TARGET_PDB = test.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target LL
+
+
+#############################################
+# Order-only phony target for LL
+
+build cmake_object_order_depends_target_LL: phony || .
+
+build CMakeFiles/LL.dir/BestLinkedListEver.cpp.obj: CXX_COMPILER__LL_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/BestLinkedListEver.cpp || cmake_object_order_depends_target_LL
+  DEP_FILE = CMakeFiles\LL.dir\BestLinkedListEver.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LL.dir
+  OBJECT_FILE_DIR = CMakeFiles\LL.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LL
+
+
+#############################################
+# Link the executable LL.exe
+
+build LL.exe: CXX_EXECUTABLE_LINKER__LL_Debug CMakeFiles/LL.dir/BestLinkedListEver.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LL.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LL.exe
+  TARGET_IMPLIB = libLL.dll.a
+  TARGET_PDB = LL.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -395,6 +428,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
+
+build LL: phony LL.exe
 
 build computation: phony computation.exe
 
@@ -424,7 +459,7 @@ build vec3: phony vec3.exe
 #############################################
 # Folder: C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug
 
-build all: phony introCplusplus.exe measure_runtime.exe computation.exe string.exe vec3.exe image.exe echo.exe dic.exe link.exe test.exe
+build all: phony introCplusplus.exe measure_runtime.exe computation.exe string.exe vec3.exe image.exe echo.exe dic.exe link.exe test.exe LL.exe
 
 # =============================================================================
 # Built-in targets
