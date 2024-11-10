@@ -9,5 +9,8 @@ C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/dic.dir
 C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/link.dir
 C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/test.dir
 C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/LL.dir
+C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/vectorrr.dir
+C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/poly.dir
+C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/stemplate.dir
 C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug/CMakeFiles/rebuild_cache.dir

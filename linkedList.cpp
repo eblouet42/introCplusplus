@@ -56,7 +56,7 @@ int main(){
     return 0;
 }
 
-const LinkedList* remove (LinkedList* list,MyPair& pair) {
+LinkedList* remove (LinkedList* list,MyPair& pair) {
     if(list==nullptr) {
         return nullptr;
     }
