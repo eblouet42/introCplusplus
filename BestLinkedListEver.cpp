@@ -1,27 +1,8 @@
 #include <iostream>
+#include "BestLinkedListEver.h"
 
-struct MyPair {
-    int a, b;
-    auto operator<=>(const MyPair&) const = default;
-};
 
-inline std::ostream& operator<<(std::ostream& os,const MyPair& p) {
-    os<<"("<<p.a<<","<<p.b<<")";
-    return os;
-}
-
-struct Node {
-    MyPair paireuh;
-    Node* next;
-};
-
-class LinkedList {
-    private:
-
-    Node* head;
-    int taille;
-
-    void copylist(LinkedList& acopier) {
+    void LinkedList::copylist(const LinkedList& acopier) {
         if (acopier.head==nullptr) {
             head=nullptr;
         } else {
@@ -36,71 +17,30 @@ class LinkedList {
         }
         taille=acopier.taille;
     }
+    LinkedList::LinkedList() {head=nullptr,taille=0;}
+    LinkedList::~LinkedList() {while (head!=nullptr){Node* NodeASuppr=head;head=head->next;delete NodeASuppr;}}
+    LinkedList::LinkedList(const LinkedList& copie){head=nullptr;taille=0;copylist(copie);}
 
-public:
+    LinkedList& LinkedList::operator=(const LinkedList& acopier) {this->~LinkedList();copylist(acopier);return *this;}
 
-    LinkedList() {
-        head=nullptr;
-        taille=0;
-    }
+    void LinkedList::push_front(const MyPair& pair) {head=new Node(pair,head);taille++;}
 
-    ~LinkedList() {
-        while (head!=nullptr){
-            Node* NodeASuppr=head;
-            head=head->next;
-            delete NodeASuppr;
-        }
-    }
-
-    LinkedList(LinkedList& copie){
-        head=nullptr;
-        taille=0;
-        copylist(copie);
-    }
-
-    LinkedList& operator=(LinkedList& other) {
-        if (this != &other) {
-            this->~LinkedList();
-            copylist(other);
-        }
-        return *this;
-    }
-
-    void push_front(MyPair& pair) {
-        Node* newNode=new Node(pair,head);
-        head=newNode;
-        taille++;
-    }
-
-    void push_back(MyPair& pair) {
+    void LinkedList::push_back(const MyPair& pair) {
         Node* newNode=new Node(pair,nullptr);
-        if (head==nullptr){
-            head=newNode;
-        }else{
+        if (head==nullptr){head=newNode;}
+        else{
             Node* current=head;
             while (current->next!=nullptr) {
                 current=current->next;
             }
             current->next=newNode;
-        }
-        taille++;
+        }taille++;
     }
 
-    MyPair& front() const {
-        if (head==nullptr){
-            throw std::runtime_error("Y'a que dalle dans la liste");
-        }
-        return head->paireuh;
-    }
+    MyPair& LinkedList::front() const {if (head==nullptr){throw std::runtime_error("Y'a que dalle dans la liste");}return head->paireuh;}
 
-    Node* headNode(){return head;}
-    int size() {return taille;}
-
-    void printList(){
-
-        if (head==nullptr) {
-            throw std::runtime_error("Y'a que dalle dans la liste");
-        }
+    void LinkedList::printList(){
+        if (head==nullptr) {throw std::runtime_error("Y'a que dalle dans la liste");}
         std::cout<<"[ ";
         Node* current=head;
         while (current!=nullptr) {
@@ -112,7 +52,6 @@ public:
         }
         std::cout<<" ]\n";
     }
-};
 
 int main() {
     LinkedList* list = new LinkedList();

@@ -25,7 +25,10 @@
 						7,
 						8,
 						9,
-						10
+						10,
+						11,
+						12,
+						13
 					]
 				}
 			],
@@ -50,7 +53,10 @@
 						7,
 						8,
 						9,
-						10
+						10,
+						11,
+						12,
+						13
 					]
 				}
 			],
@@ -114,6 +120,20 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "poly::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-poly-Debug-252e247216d70c5ff8d8.json",
+					"name" : "poly",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stemplate::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stemplate-Debug-328a78fca879787341ce.json",
+					"name" : "stemplate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "string::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-string-Debug-99cf039d16a567d396ef.json",
 					"name" : "string",
@@ -131,6 +151,13 @@
 					"id" : "vec3::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-vec3-Debug-c0bbe704594aec392168.json",
 					"name" : "vec3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vectorrr::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vectorrr-Debug-a25ba56bb46f8c842d9e.json",
+					"name" : "vectorrr",
 					"projectIndex" : 0
 				}
 			]

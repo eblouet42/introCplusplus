@@ -403,6 +403,105 @@ build LL.exe: CXX_EXECUTABLE_LINKER__LL_Debug CMakeFiles/LL.dir/BestLinkedListEv
   TARGET_IMPLIB = libLL.dll.a
   TARGET_PDB = LL.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target vectorrr
+
+
+#############################################
+# Order-only phony target for vectorrr
+
+build cmake_object_order_depends_target_vectorrr: phony || .
+
+build CMakeFiles/vectorrr.dir/Vector.cpp.obj: CXX_COMPILER__vectorrr_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/Vector.cpp || cmake_object_order_depends_target_vectorrr
+  DEP_FILE = CMakeFiles\vectorrr.dir\Vector.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\vectorrr.dir
+  OBJECT_FILE_DIR = CMakeFiles\vectorrr.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target vectorrr
+
+
+#############################################
+# Link the executable vectorrr.exe
+
+build vectorrr.exe: CXX_EXECUTABLE_LINKER__vectorrr_Debug CMakeFiles/vectorrr.dir/Vector.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\vectorrr.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = vectorrr.exe
+  TARGET_IMPLIB = libvectorrr.dll.a
+  TARGET_PDB = vectorrr.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target poly
+
+
+#############################################
+# Order-only phony target for poly
+
+build cmake_object_order_depends_target_poly: phony || .
+
+build CMakeFiles/poly.dir/polymorphisme.cpp.obj: CXX_COMPILER__poly_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/polymorphisme.cpp || cmake_object_order_depends_target_poly
+  DEP_FILE = CMakeFiles\poly.dir\polymorphisme.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\poly.dir
+  OBJECT_FILE_DIR = CMakeFiles\poly.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target poly
+
+
+#############################################
+# Link the executable poly.exe
+
+build poly.exe: CXX_EXECUTABLE_LINKER__poly_Debug CMakeFiles/poly.dir/polymorphisme.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\poly.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = poly.exe
+  TARGET_IMPLIB = libpoly.dll.a
+  TARGET_PDB = poly.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target stemplate
+
+
+#############################################
+# Order-only phony target for stemplate
+
+build cmake_object_order_depends_target_stemplate: phony || .
+
+build CMakeFiles/stemplate.dir/templaSTL.cpp.obj: CXX_COMPILER__stemplate_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/templaSTL.cpp || cmake_object_order_depends_target_stemplate
+  DEP_FILE = CMakeFiles\stemplate.dir\templaSTL.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\stemplate.dir
+  OBJECT_FILE_DIR = CMakeFiles\stemplate.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target stemplate
+
+
+#############################################
+# Link the executable stemplate.exe
+
+build stemplate.exe: CXX_EXECUTABLE_LINKER__stemplate_Debug CMakeFiles/stemplate.dir/templaSTL.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\stemplate.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = stemplate.exe
+  TARGET_IMPLIB = libstemplate.dll.a
+  TARGET_PDB = stemplate.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -445,11 +544,17 @@ build link: phony link.exe
 
 build measure_runtime: phony measure_runtime.exe
 
+build poly: phony poly.exe
+
+build stemplate: phony stemplate.exe
+
 build string: phony string.exe
 
 build test: phony test.exe
 
 build vec3: phony vec3.exe
+
+build vectorrr: phony vectorrr.exe
 
 # =============================================================================
 # Folder targets.
@@ -459,7 +564,7 @@ build vec3: phony vec3.exe
 #############################################
 # Folder: C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug
 
-build all: phony introCplusplus.exe measure_runtime.exe computation.exe string.exe vec3.exe image.exe echo.exe dic.exe link.exe test.exe LL.exe
+build all: phony introCplusplus.exe measure_runtime.exe computation.exe string.exe vec3.exe image.exe echo.exe dic.exe link.exe test.exe LL.exe vectorrr.exe poly.exe stemplate.exe
 
 # =============================================================================
 # Built-in targets
