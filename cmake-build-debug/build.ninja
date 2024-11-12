@@ -502,6 +502,57 @@ build stemplate.exe: CXX_EXECUTABLE_LINKER__stemplate_Debug CMakeFiles/stemplate
   TARGET_IMPLIB = libstemplate.dll.a
   TARGET_PDB = stemplate.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target trueraytracing
+
+
+#############################################
+# Order-only phony target for trueraytracing
+
+build cmake_object_order_depends_target_trueraytracing: phony || .
+
+build CMakeFiles/trueraytracing.dir/RayTrace/Image.cpp.obj: CXX_COMPILER__trueraytracing_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/RayTrace/Image.cpp || cmake_object_order_depends_target_trueraytracing
+  DEP_FILE = CMakeFiles\trueraytracing.dir\RayTrace\Image.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\trueraytracing.dir
+  OBJECT_FILE_DIR = CMakeFiles\trueraytracing.dir\RayTrace
+
+build CMakeFiles/trueraytracing.dir/RayTrace/Intersection.cpp.obj: CXX_COMPILER__trueraytracing_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/RayTrace/Intersection.cpp || cmake_object_order_depends_target_trueraytracing
+  DEP_FILE = CMakeFiles\trueraytracing.dir\RayTrace\Intersection.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\trueraytracing.dir
+  OBJECT_FILE_DIR = CMakeFiles\trueraytracing.dir\RayTrace
+
+build CMakeFiles/trueraytracing.dir/RayTrace/main_raytracing.cpp.obj: CXX_COMPILER__trueraytracing_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/RayTrace/main_raytracing.cpp || cmake_object_order_depends_target_trueraytracing
+  DEP_FILE = CMakeFiles\trueraytracing.dir\RayTrace\main_raytracing.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\trueraytracing.dir
+  OBJECT_FILE_DIR = CMakeFiles\trueraytracing.dir\RayTrace
+
+build CMakeFiles/trueraytracing.dir/RayTrace/Vec3.cpp.obj: CXX_COMPILER__trueraytracing_unscanned_Debug C$:/Users/evanb/CLionProjects/introCplusplus/RayTrace/Vec3.cpp || cmake_object_order_depends_target_trueraytracing
+  DEP_FILE = CMakeFiles\trueraytracing.dir\RayTrace\Vec3.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\trueraytracing.dir
+  OBJECT_FILE_DIR = CMakeFiles\trueraytracing.dir\RayTrace
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target trueraytracing
+
+
+#############################################
+# Link the executable trueraytracing.exe
+
+build trueraytracing.exe: CXX_EXECUTABLE_LINKER__trueraytracing_Debug CMakeFiles/trueraytracing.dir/RayTrace/Image.cpp.obj CMakeFiles/trueraytracing.dir/RayTrace/Intersection.cpp.obj CMakeFiles/trueraytracing.dir/RayTrace/main_raytracing.cpp.obj CMakeFiles/trueraytracing.dir/RayTrace/Vec3.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\trueraytracing.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = trueraytracing.exe
+  TARGET_IMPLIB = libtrueraytracing.dll.a
+  TARGET_PDB = trueraytracing.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -552,6 +603,8 @@ build string: phony string.exe
 
 build test: phony test.exe
 
+build trueraytracing: phony trueraytracing.exe
+
 build vec3: phony vec3.exe
 
 build vectorrr: phony vectorrr.exe
@@ -564,7 +617,7 @@ build vectorrr: phony vectorrr.exe
 #############################################
 # Folder: C:/Users/evanb/CLionProjects/introCplusplus/cmake-build-debug
 
-build all: phony introCplusplus.exe measure_runtime.exe computation.exe string.exe vec3.exe image.exe echo.exe dic.exe link.exe test.exe LL.exe vectorrr.exe poly.exe stemplate.exe
+build all: phony introCplusplus.exe measure_runtime.exe computation.exe string.exe vec3.exe image.exe echo.exe dic.exe link.exe test.exe LL.exe vectorrr.exe poly.exe stemplate.exe trueraytracing.exe
 
 # =============================================================================
 # Built-in targets

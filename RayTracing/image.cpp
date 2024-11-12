@@ -35,7 +35,7 @@ struct Sphere{
   float radius;
 };
 
-double intersect(const Ray& ray,const Sphere& sphere) {
+double intersect(const Ray& ray,const Sphere& sphere){
   vec3 oc=sphere.center-ray.origin;
   double a=dot(ray.direction,ray.direction);
   double b=2*dot(ray.direction,oc);
